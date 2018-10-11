@@ -70,7 +70,15 @@ class Main
          * Task 3. Add 1 to each element in ar1.  Print it out below
          */
 
-        
+        System.out.println("** Task 3 **");
+        int value;
+        for (int i=0 ; i<ar1.length ; i++)
+        {
+            ar1[i] =  ar1[i] +1;
+        }
+        for (int i=0 ; i<ar1.length ; i++)
+            System.out.println("ar1[" + i + "] = "+ar1[i]);
+        //   
         /*
          * task 4. Create a new array called ar3.
          *         Copy the elements of ar1 into ar3.  Then do it again
@@ -78,6 +86,7 @@ class Main
          *         ar1: 1 2 3
          *         ar3: 1 2 3 0 1 2 3
          */
+        System.out.println("*** Task 4 *");
         
         
         /*
