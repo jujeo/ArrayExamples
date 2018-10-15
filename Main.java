@@ -171,6 +171,16 @@ class Main
          *          ar[3]=4
          */
         
+        System.out.println("** Task 7 **");
+        
+        for (int i=0 ; i<ar1.length ; i++)
+        {
+            if ( ar1[i]%2==1)
+                ar1[i] *=10;
+        }
+        
+        for (int i=0 ; i<ar1.length ; i++)
+            System.out.println(ar1[i]);
 
          /*
           * Task 8
@@ -183,9 +193,14 @@ class Main
           *    ar2[3]=3  ->  ar2odds[1]=3
           */
          
+        System.out.println("*** Task 8 **");
+        
+        int[] ar2odds = new int[n];
+         
+         
         /*
          * Task 9. In the array ar2, count how many odd numbers you
-         * have.  Then create an ew array called ar4.  Copy just the odd
+         * have.  Then create an new array called ar4.  Copy just the odd
          * numbers from ar1 into ar4.  Print ar4
          */
         
