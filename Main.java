@@ -193,9 +193,22 @@ class Main
           *    ar2[3]=3  ->  ar2odds[1]=3
           */
          
-        System.out.println("*** Task 8 **");
+        System.out.println(" ** Task 8 **");
+        int k=0;
+        int[] ar2odds = new int[ar2.length]; // too big right now.
+        for ( int i=0 ; i<ar2.length ; i++)
+        {
+            System.out.println(ar2[i]); // Just print it out to see
+               
+            if (i%2==1)
+            {
+                ar2odds[k]=ar2[i];
+                k++;
+            }
+        }
         
-        int[] ar2odds = new int[n];
+        for (int i=0 ; i<k ; i++)
+        System.out.println(ar2odds[i]);
          
          
         /*
@@ -204,6 +217,25 @@ class Main
          * numbers from ar1 into ar4.  Print ar4
          */
         
+        int l4=0;
+        for (int i=0 ; i<ar2.length ; i++)
+        {
+            if ( ar2[i]%2==1)
+                l4++;
+        } 
+        int[] ar4 = new int[l4];
+        k=0;
+        for (int i=0 ; i<ar2.length ; i++)
+        {
+            if (ar2[i]%2==1)
+            {
+                ar4[k]=ar2[i];
+                k++;
+            }
+        }
+                   
+          for (int i=0 ; i<k ; i++)
+              System.out.println(ar4[i]);
         /*
          * Task 10.  Shift the elements of ar4 right by 1
          * For example
