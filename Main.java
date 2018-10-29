@@ -374,6 +374,26 @@ class Main
          * a vowel
          */
         
+        System.out.println("** Task 13 **");
+        String[] monsterArray={ "Cookie", "Grover", "Oscar the Grouch" , "Elmo", "Rosita"};
+
+
+        for (int i=0 ; i<monsterArray.length; i++)
+        {
+            System.out.println(" [ "+i+"] "+monsterArray[i]);
+        }
+
+        for (int i=0 ; i<monsterArray.length; i++)
+        {
+            char c= monsterArray[i].toLowerCase().charAt(0);
+            if (c=='a' || c=='e' || c=='i' || c=='o' || c=='u')
+            System.out.println(monsterArray[i]); 
+        } 
+        
+        
+        
+        
+       
          /*
           * Task 14
           * Create an array of integers from 3 to 94 and call it arx
